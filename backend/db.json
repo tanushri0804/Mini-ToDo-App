@@ -1,0 +1,29 @@
+{
+    "users": [
+        {
+            "email": "tanushri98371@gmail.com",
+            "password": "Tanu@123",
+            "id": 1
+          }
+    ],
+    "todos": [
+    {
+      "title": "Grocery Shopping",
+      "description": "Buy fruits, vegetables, and household essentials for the week.",
+      "completed": false,
+      "id": 1
+    },
+    {
+      "title": "Read a Book",
+      "description": "Finish 2 chapters of 'The Housemaid' and take notes.",
+      "completed": false,
+      "id": 2
+    },
+    {
+      "title": "Learn French",
+      "description": "Practice 10 new vocabulary words and revise grammar rules.",
+      "completed": false,
+      "id": 3
+    }
+  ]
+}
