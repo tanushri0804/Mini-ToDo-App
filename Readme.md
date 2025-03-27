@@ -26,7 +26,7 @@ The *Mini-Todo App* is a simple yet functional task management application built
 
 ### 1️⃣ Clone the Repository  
 sh
-git clone https://github.com/Priyankanegi28/Mini-Todo-App.git 
+git clone https://github.com/tanushri0804/Mini-ToDo-App.git
 cd mini-todo  
   
 
