@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f4f4f4;
+  background-color: #eaf2f8;
   color: #333;
   line-height: 1.6;
   display: flex;
@@ -15,29 +15,137 @@ body {
 }
 
 .navbar {
-  background-color: #333;
-  color: white;
-  padding: 1em;
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  background: rgba(0, 77, 153, 0.8);
+  padding: 15px;
+  backdrop-filter: blur(10px);
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
-  padding: 0.5em 1em;
   font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.3s ease-in-out;
+  transition: color 0.3s;
 }
 
 .navbar a:hover {
-  background-color: #555;
+  color: #f4a261;
+}
+
+.hero {
+  margin-top: 100px;
+  padding: 50px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #004d99;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+/* Features Section */
+.features {
+  padding: 50px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.feature {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feature img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.testimonials p {
+  font-size: 1.2rem;
+  font-style: italic;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+/* FAQ Section */
+.faq {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.faq h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.faq-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 15px auto;
+}
+
+.faq-item h3 {
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  color: #555;
 }
 
 main {
@@ -51,7 +159,7 @@ main {
 }
 
 h1, h2 {
-  color: #333;
+  color: #004d99;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -83,12 +191,12 @@ form input, form button {
 }
 
 form input:focus {
-  border-color: #333;
+  border-color: #004d99;
   outline: none;
 }
 
 form button {
-  background-color: #333;
+  background-color: #004d99;
   color: white;
   border: none;
   font-size: 1em;
@@ -97,22 +205,20 @@ form button {
 }
 
 form button:hover {
-  background-color: #555;
+  background-color: #003366;
 }
 
 footer {
-  background-color: #333;
+  margin-top: 50px;
+  padding: 15px;
+  background: rgba(0, 77, 153, 0.8);
+  font-size: 0.9rem;
   color: white;
-  text-align: center;
-  padding: 1em;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
 
 main h1 {
   font-size: 2.5em;
-  color: #333;
+  color: #004d99;
 }
 
 main p {
@@ -140,7 +246,7 @@ main p {
 }
 
 .todo-item button {
-  background-color: #333;
+  background-color: #004d99;
   color: white;
   border: none;
   padding: 8px 15px;
@@ -151,9 +257,25 @@ main p {
 }
 
 .todo-item button:hover {
-  background-color: #555;
+  background-color: #003366;
 }
 
 .todo-item button:first-of-type {
   margin-left: 0;
+}
+
+.btn {
+  background: #f4a261;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #d98e50;
 }
