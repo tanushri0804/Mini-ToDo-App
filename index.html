@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mini Todo App</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="signup.html">Signup</a>
-      <a href="login.html">Login</a>
+      <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+      <a href="signup.html"><i class="fas fa-user-plus"></i> Signup</a>
+      <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
     </nav>
   </header>
   
@@ -19,60 +21,112 @@
     <section class="hero">
       <h1>Welcome to the Mini Todo App</h1>
       <p>Organize your tasks effortlessly and boost your productivity.</p>
-      <a href="signup.html" class="btn">Get Started</a>
+      <div class="cta-buttons">
+        <a href="signup.html" class="btn primary">Get Started</a>
+        <a href="#features" class="btn secondary">Learn More</a>
+      </div>
     </section>
   </main>
 
   <!-- Features Section -->
-  <section class="features">
+  <section class="features" id="features">
     <h2>Why Choose Mini Todo App?</h2>
     <div class="feature-grid">
       <div class="feature">
+        <i class="fas fa-tasks"></i>
         <h3>Task Management</h3>
-        <p>Add, edit, and delete tasks seamlessly.</p>
+        <p>Add, edit, and delete tasks seamlessly with our intuitive interface.</p>
       </div>
       <div class="feature">
-        <h3>Reminders</h3>
-        <p>Never forget an important task with our reminder feature.</p>
+        <i class="fas fa-bell"></i>
+        <h3>Smart Reminders</h3>
+        <p>Never forget an important task with our intelligent reminder system.</p>
       </div>
       <div class="feature">
-        <h3>Sync Across Devices</h3>
-        <p>Access your tasks from any device, anytime.</p>
+        <i class="fas fa-sync-alt"></i>
+        <h3>Cross-Device Sync</h3>
+        <p>Access your tasks from any device, anytime with cloud synchronization.</p>
       </div>
       <div class="feature">
+        <i class="fas fa-lock"></i>
         <h3>Secure & Private</h3>
-        <p>Your data is encrypted and safe with us.</p>
+        <p>Your data is encrypted end-to-end and always protected.</p>
       </div>
     </div>
   </section>
   
   <!-- Testimonials Section -->
   <section class="testimonials">
-    <h2>What Our Users Say</h2>
-    <p>"This app has changed how I manage my daily tasks. Super simple and efficient!" - <strong>Alice</strong></p>
-    <p>"I love the reminders. I never miss an important task anymore!" - <strong>Mark</strong></p>
-    <p>"The cross-device sync makes it perfect for work and personal tasks." - <strong>Rachel</strong></p>
+    <div class="testimonial-container">
+      <h2>What Our Users Say</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <div class="quote">"This app has completely changed how I manage my daily tasks. Super simple and efficient!"</div>
+          <div class="author">- Alice, Project Manager</div>
+        </div>
+        <div class="testimonial">
+          <div class="quote">"I love the smart reminders. I never miss deadlines anymore!"</div>
+          <div class="author">- Mark, Freelancer</div>
+        </div>
+        <div class="testimonial">
+          <div class="quote">"The cross-device sync makes it perfect for balancing work and personal tasks."</div>
+          <div class="author">- Rachel, Entrepreneur</div>
+        </div>
+      </div>
+    </div>
   </section>
   
   <!-- FAQ Section -->
   <section class="faq">
     <h2>Frequently Asked Questions</h2>
-    <div class="faq-item">
-      <h3>Is Mini Todo App free?</h3>
-      <p>Yes, it is free with all essential features. A premium version is available for advanced options.</p>
-    </div>
-    <div class="faq-item">
-      <h3>Can I share my tasks with others?</h3>
-      <p>Yes, you can share tasks with friends, family, or colleagues easily.</p>
-    </div>
-    <div class="faq-item">
-      <h3>Is my data secure?</h3>
-      <p>Absolutely! We use advanced encryption to protect your data.</p>
+    <div class="faq-container">
+      <div class="faq-item">
+        <div class="question">
+          <h3>Is Mini Todo App free?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="answer">
+          <p>Yes, our basic version is completely free with all essential features. We also offer a premium version with advanced options like team collaboration and custom themes.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="question">
+          <h3>Can I share tasks with others?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="answer">
+          <p>Absolutely! You can easily share tasks with friends, family, or colleagues and collaborate in real-time.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="question">
+          <h3>Is my data secure?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="answer">
+          <p>Security is our top priority. We use industry-standard AES-256 encryption to protect all your data both in transit and at rest.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2024 Mini Todo App. All rights reserved.</p>
+    <div class="footer-content">
+      <div class="footer-logo">Mini Todo App</div>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="copyright">&copy; 2024 Mini Todo App. All rights reserved.</div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

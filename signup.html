@@ -3,30 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signup</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Sign Up | Mini Todo App</title>
+  <link rel="stylesheet" href="signup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="signup.html">Signup</a>
-      <a href="login.html">Login</a>
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="signup.html" class="active"><i class="fas fa-user-plus"></i> Sign Up</a>
+      <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
     </nav>
   </header>
-  <main>
-    <h2>Signup</h2>
-    <form id="signup-form">
-      <label>Email:</label>
-      <input type="email" id="email" required>
-      <label>Password:</label>
-      <input type="password" id="password" required>
-      <button type="submit">Signup</button>
-    </form>
+  
+  <main class="signup-container">
+    <div class="signup-card">
+      <div class="signup-header">
+        <h1>Create Your Account</h1>
+        <p>Join thousands of productive people using Mini Todo App</p>
+      </div>
+      
+      <form id="signup-form" class="signup-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <div class="input-with-icon">
+            <i class="fas fa-user"></i>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <div class="input-with-icon">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="input-with-icon">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" placeholder="Create a password" required>
+            <i class="fas fa-eye toggle-password"></i>
+          </div>
+          <div class="password-strength">
+            <div class="strength-bar"></div>
+            <span class="strength-text">Password strength</span>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <div class="input-with-icon">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+          </div>
+        </div>
+        
+        <div class="form-group terms">
+          <input type="checkbox" id="terms" required>
+          <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+        </div>
+        
+        <button type="submit" class="signup-btn">
+          <span>Create Account</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </form>
+      
+      <div class="login-link">
+        Already have an account? <a href="login.html">Log in</a>
+      </div>
+    </div>
   </main>
+  
   <footer>
-    <p>&copy; 2024 Todo App</p>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <p class="copyright">&copy; 2024 Mini Todo App. All rights reserved.</p>
+    </div>
   </footer>
+
   <script src="js/script.js"></script>
 </body>
 </html>
