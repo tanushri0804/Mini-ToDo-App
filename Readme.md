@@ -45,6 +45,9 @@ npm install
 ### 🔄 Workflow  
 1. *Sign up* with your details.  
 2. *Log in* to access your personal todo list.  
-3. *Add todos* by entering a title and description.  
-4. *Edit or delete* tasks as needed.  
-5. *Log out* when done.
+3. *Add todos* by entering a title, description, and selecting a priority (High, Medium, Low).  
+4. *Todos* will be displayed in *order of priority*.
+5. *Edit or delete* tasks as needed.  
+6. *Mark tasks as complete* by ticking the checkbox.
+7. *Completed tasks* will be visually distinguished.
+8. *Log out* when done.
